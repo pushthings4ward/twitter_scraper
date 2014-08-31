@@ -5,7 +5,7 @@ import datetime
 
 # Change QUERY to your search term of choice. 
 # Examples: 'newsnight', 'from:bbcnewsnight', 'to:bbcnewsnight'
-QUERY = 'to:oneworldnl'
+QUERY = 'ddj'
 RESULTS_PER_PAGE = '100'
 LANGUAGE = ''
 NUM_PAGES = 15
@@ -20,9 +20,9 @@ for page in range(1, NUM_PAGES+1):
             data['id'] = result['id']
             data['text'] = result['text'].replace("&quot;", "'")
             data['from_user'] = result['from_user']
-            data['profile_image_url'] = result['profile_image_url']
+            #data['profile_image_url'] = result['profile_image_url']
             data['geo'] = result['geo']
-            data['source'] = result['source']
+            #data['source'] = result['source']
             data['iso_language_code'] = result['iso_language_code']
             data['from_user_name'] = result['from_user_name']
             data['date'] = datetime.datetime.today()
