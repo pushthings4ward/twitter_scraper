@@ -5,7 +5,7 @@ import datetime
 
 # Change QUERY to your search term of choice. 
 # Examples: 'newsnight', 'from:bbcnewsnight', 'to:bbcnewsnight'
-QUERY = '#ddj'
+QUERY = 'ddj'
 RESULTS_PER_PAGE = '100'
 LANGUAGE = ''
 NUM_PAGES = 15
